@@ -1,0 +1,385 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TopActivity">
+    <include
+        android:id="@+id/header"
+        layout="@layout/layout_header"/>
+
+    <include
+        android:id="@+id/search"
+        layout="@layout/layout_header_search" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/search"
+        android:background="@drawable/layout_border_top"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/spacing_normal"
+                android:paddingLeft="@dimen/spacing_medium"
+                android:paddingRight="@dimen/spacing_normal"
+                android:paddingTop="@dimen/spacing_medium">
+
+                <Button
+                    android:id="@+id/top_btn_nihon_basic"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_blue"
+                    android:padding="@dimen/spacing_padding_btn"
+                    android:text="@string/str_btn_nihon_basic"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/spacing_normal"
+                android:paddingLeft="@dimen/spacing_normal"
+                android:paddingRight="@dimen/spacing_normal"
+                android:paddingTop="@dimen/spacing_medium">
+
+                <Button
+                    android:id="@+id/top_btn_security_basic"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_blue"
+                    android:padding="@dimen/spacing_padding_btn"
+                    android:text="@string/str_btn_security_basic"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/spacing_normal"
+                android:paddingLeft="@dimen/spacing_normal"
+                android:paddingRight="@dimen/spacing_normal"
+                android:paddingTop="@dimen/spacing_medium">
+
+                <Button
+                    android:id="@+id/top_btn_nihon_advance"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_blue"
+                    android:padding="@dimen/spacing_padding_btn"
+                    android:text="@string/str_btn_nihon_advance"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/spacing_normal"
+                android:paddingLeft="@dimen/spacing_normal"
+                android:paddingRight="@dimen/spacing_medium"
+                android:paddingTop="@dimen/spacing_medium">
+
+                <Button
+                    android:id="@+id/top_btn_security_advance"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_blue"
+                    android:padding="@dimen/spacing_padding_btn"
+                    android:text="@string/str_btn_security_advance"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_medium" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@drawable/layout_border_top"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="@dimen/spacing_normal"
+                    android:paddingLeft="@dimen/spacing_medium"
+                    android:paddingRight="@dimen/spacing_normal"
+                    android:paddingTop="@dimen/spacing_normal">
+
+                    <Button
+                        android:id="@+id/top_btn_compliance"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_red"
+                        android:padding="@dimen/spacing_padding_btn"
+                        android:text="@string/str_btn_compliance"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="@dimen/spacing_normal">
+
+                    <Button
+                        android:id="@+id/top_btn_security"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_red"
+                        android:padding="@dimen/spacing_padding_btn"
+                        android:text="@string/str_btn_security"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="@dimen/spacing_normal">
+
+                    <Button
+                        android:id="@+id/top_btn_harassment"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_red"
+                        android:padding="@dimen/spacing_padding_btn"
+                        android:text="@string/str_btn_harassment"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="@dimen/spacing_normal"
+                    android:paddingLeft="@dimen/spacing_normal"
+                    android:paddingRight="@dimen/spacing_medium"
+                    android:paddingTop="@dimen/spacing_normal">
+
+                    <Button
+                        android:id="@+id/top_btn_moral"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_red"
+                        android:padding="@dimen/spacing_padding_btn"
+                        android:text="@string/str_btn_moral"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_medium" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="@dimen/spacing_normal"
+                    android:paddingLeft="@dimen/spacing_medium"
+                    android:paddingRight="@dimen/spacing_normal"
+                    android:paddingTop="@dimen/spacing_normal">
+
+                    <Button
+                        android:id="@+id/top_btn_governance"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_red"
+                        android:padding="@dimen/spacing_padding_btn"
+                        android:text="@string/str_btn_governance"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="@dimen/spacing_normal">
+
+                    <Button
+                        android:id="@+id/top_btn_lab_provisions"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_orange"
+                        android:padding="@dimen/spacing_padding_btn"
+                        android:text="@string/str_btn_lab_provisions"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="@dimen/spacing_normal">
+
+                    <Button
+                        android:id="@+id/top_btn_travel"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_orange"
+                        android:padding="@dimen/spacing_padding_btn"
+                        android:text="@string/str_btn_travel"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="@dimen/spacing_normal"
+                    android:paddingLeft="@dimen/spacing_normal"
+                    android:paddingRight="@dimen/spacing_medium"
+                    android:paddingTop="@dimen/spacing_normal">
+
+                    <Button
+                        android:id="@+id/top_btn_jp_life"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_orange"
+                        android:padding="@dimen/spacing_padding_btn"
+                        android:text="@string/str_btn_jp_life"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_medium" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/layout_border_top"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/spacing_medium"
+                android:paddingLeft="@dimen/spacing_medium"
+                android:paddingRight="@dimen/spacing_normal"
+                android:paddingTop="@dimen/spacing_normal">
+
+                <Button
+                    android:id="@+id/top_btn_email_sns"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_green"
+                    android:padding="@dimen/spacing_padding_btn"
+                    android:text="@string/str_btn_email_sns"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/spacing_medium"
+                android:paddingLeft="@dimen/spacing_normal"
+                android:paddingRight="@dimen/spacing_normal"
+                android:paddingTop="@dimen/spacing_normal">
+
+                <Button
+                    android:id="@+id/top_btn_video"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_green"
+                    android:padding="@dimen/spacing_padding_btn"
+                    android:text="@string/str_btn_video"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/spacing_medium"
+                android:paddingLeft="@dimen/spacing_normal"
+                android:paddingRight="@dimen/spacing_normal"
+                android:paddingTop="@dimen/spacing_normal">
+
+                <Button
+                    android:id="@+id/top_btn_job"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_green"
+                    android:padding="@dimen/spacing_padding_btn"
+                    android:text="@string/str_btn_job"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/spacing_medium"
+                android:paddingLeft="@dimen/spacing_normal"
+                android:paddingRight="@dimen/spacing_medium"
+                android:paddingTop="@dimen/spacing_normal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_green"
+                    android:padding="@dimen/spacing_padding_btn"
+                    android:text="@string/str_btn_etc"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_medium" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/footer"
+        layout="@layout/layout_footer" />
+</RelativeLayout>

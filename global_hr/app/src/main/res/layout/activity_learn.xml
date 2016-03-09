@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="runsystem.net.global_hr.LearnActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/HeaderBaseLayout">
+
+        <RelativeLayout style="@style/HeaderRelativeLayout">
+
+            <ImageButton
+                android:id="@+id/btn_home"
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/header_button_height"
+                android:layout_height="@dimen/header_button_height"
+                android:layout_marginLeft="@dimen/spacing_medium"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/ic_home" />
+            <ImageButton
+                android:id="@+id/btn_logout"
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/header_button_height"
+                android:layout_height="@dimen/header_button_height"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/spacing_medium"
+                android:background="@drawable/ic_logout" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <WebView
+        android:id="@+id/learn_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"></WebView>
+
+</RelativeLayout>

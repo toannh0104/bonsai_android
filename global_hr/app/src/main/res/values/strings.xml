@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">global_hr</string>
+
+
+    <string name="mes_startup_loading">Loading...</string>
+    <string name="mes_startup_login">しばらくお待ちください。\nPlease wait a few minuties</string>
+    <string name="mes_startup_uploading">uploading...</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="title_error">Error</string>
+    <string name="mess_no_network">ネットワークに接続失敗です</string>
+    <string name="mess_server_error">サーバーエラー</string>
+    <string name="mess_no_input">Please input ID and Password!</string>
+
+    <string name="logout_title">Logout</string>
+    <string name="logout_mess">Are you sure you want to logout?</string>
+
+    <string name="info_double_tap_to_finish">終了する場合は、もう一度バックボタンを押してください</string>
+    <string name="login_header">BONSAi</string>
+    <string name="login_mess">Business Oriented Nihongo Social Application Intelligence</string>
+    <string name="login_id">Login ID</string>
+    <string name="skype_id">Skype ID</string>
+    <string name="login_pass">Password</string>
+    <string name="title_login">ログイン</string>
+    <string name="header_title">BONSAi</string>
+    <string name="footer_title">Information &amp; News</string>
+    <string name="str_search">検索</string>
+    <!-- 基本学習エリア-->
+    <string name="str_btn_nihon_basic">日本語 Basic</string>
+    <string name="str_btn_security_basic">安全 Basic</string>
+    <string name="str_btn_nihon_advance">日本語 Advance</string>
+    <string name="str_btn_security_advance">安全 Advance</string>
+    <!-- 実務学習エリア-->
+    <string name="str_btn_compliance">コンプライアンス</string>
+    <string name="str_btn_security">セキュリティ</string>
+    <string name="str_btn_harassment">ハラスメント</string>
+    <string name="str_btn_moral">モラル</string>
+    <string name="str_btn_governance">ガバナンス</string>
+    <string name="str_btn_lab_provisions">労働規定</string>
+    <string name="str_btn_travel">渡航</string>
+    <string name="str_btn_jp_life">Japan Life</string>
+    <!-- コミュニケーションエリア-->
+    <string name="str_btn_email_sns">Email SNS</string>
+    <string name="str_btn_video">Video</string>
+    <string name="str_btn_job">Job</string>
+    <string name="str_btn_etc">etc</string>
+    <string name="title_activity_learn">LearnActivity</string>
+    <string name="title_activity_dialog_recorder">DialogRecorderActivity</string>
+
+
+
+</resources>

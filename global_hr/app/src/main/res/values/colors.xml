@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="blue">#4169E1</color>
+    <color name="blue_border">#0A46E6</color>
+    <color name="blue_light">#3B7BC9</color>
+    <color name="red_border">#FF0000</color>
+    <color name="red_light">#C93C39</color>
+    <color name="orange_light">#D87420</color>
+    <color name="orange_border">#F79646</color>
+    <color name="green_light">#9BC348</color>
+    <color name="green_border">#00B050</color>
+    <color name="step">#DDD9C3</color>
+    <color name="step_border">#948A54</color>
+    <color name="ccc">#aaa</color>
+    <color name="gray">#736f6e</color>
+    <color name="gray_light">#d3d3d3</color>
+    <color name="gray_wolf">#504a4b</color>
+    <color name="red">#ff0000</color>
+    <color name="yellow">#FFD700</color>
+    <color name="pink">#f660ab</color>
+    <color name="pink_light">#faafba</color>
+    <color name="orange">#fe9a2e</color>
+    <color name="brown">#4C3627</color>
+    <color name="light">#d8d8d8</color>
+    <color name="light_light">#f2f2f2</color>
+    <color name="light_border">#a4a4a4</color>
+    <color name="link_blue">#1f6d9d</color>
+    <color name="transparent_color">#00000000</color>
+    <color name="transparent_white">#4dffffff</color>
+    <color name="transparent_black">#11000000</color>
+    <color name="btn_disable_gray">#CCCCCC</color>
+    <color name="rose_white">#F9F5F2</color>
+    <color name="blue_skype">#2CADE3</color>
+    <color name="blue_skype_bg">#01BCF3</color>
+
+</resources>

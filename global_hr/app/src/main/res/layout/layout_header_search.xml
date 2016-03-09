@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_top_search"
+    android:background="@drawable/layout_border_top"
+    android:paddingTop="@dimen/spacing_normal"
+    android:paddingLeft="@dimen/spacing_medium"
+    android:paddingBottom="@dimen/spacing_normal"
+    android:paddingRight="@dimen/spacing_medium"
+    android:layout_below="@+id/header">
+    <Button
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/spacing_normal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/textsize_medium"
+        android:textColor="@color/black"
+        android:background="@drawable/button_gray"
+        android:text="@string/str_search"/>
+</RelativeLayout>

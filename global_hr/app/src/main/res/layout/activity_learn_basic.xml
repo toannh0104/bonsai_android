@@ -1,0 +1,487 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".TopActivity">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/layout_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/header"
+        android:background="@drawable/layout_border_top"
+        android:orientation="vertical">
+        <!-- Action -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_large"
+                android:layout_marginTop="@dimen/spacing_medium"
+                android:text="Basic of Japanese – 日本語基礎"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_medium" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/learn_action_height"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/spacing_normal"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/icon_lesson" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/spacing_small"
+                            android:background="@drawable/button_gray"
+                            android:text="Lesson #1~#30"
+                            android:textSize="@dimen/textsize_medium" />
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/spacing_small"
+                            android:background="@drawable/button_gray"
+                            android:text="Lesson Score"
+                            android:textSize="@dimen/textsize_medium" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/spacing_normal"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/icon_examine" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/spacing_small"
+                            android:background="@drawable/button_gray"
+                            android:text="Examine #1~#30"
+                            android:textSize="@dimen/textsize_medium" />
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/spacing_small"
+                            android:background="@drawable/button_gray"
+                            android:text="Examine Score"
+                            android:textSize="@dimen/textsize_medium" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Content -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/spacing_medium"
+            android:background="@drawable/layout_border"
+            android:orientation="horizontal"
+            android:padding="@dimen/spacing_medium">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/learn_btn_sound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_sound_off" />
+
+                <ImageButton
+                    android:id="@+id/learn_btn_mic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_mic_off" />
+
+                <ImageButton
+                    android:id="@+id/learn_btn_write"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_write_off" />
+            </LinearLayout>
+            <!-- Title -->
+            <TextView
+                android:id="@+id/learn_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lesson #1 : 挨拶（Greeting) (step1)"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_medium" />
+
+            <!-- Kaiwa -->
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_above="@+id/learn_layout_next"
+                android:layout_below="@+id/learn_tv_title"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:paddingBottom="@dimen/spacing_large">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/spacing_large">
+
+                        <LinearLayout
+                            android:layout_width="@dimen/learn_namae_width"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/textsize_small" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="山田："
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/textsize_medium" />
+                        </LinearLayout>
+
+                        <!-- Kaiwa content-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/textsize_small" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="みなさん、初めまして。"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/textsize_medium" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="（　多言語訳を表示　）"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/textsize_medium" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/textsize_small" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="わたしは、山田です。"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/textsize_medium" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="（　多言語訳を表示　）"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/textsize_medium" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/img_kaiwa1" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/textsize_small" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="どうぞよろしくお願いします。"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/textsize_medium" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="（　多言語訳を表示　）"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/textsize_medium" />
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/img_kaiwa2" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="@dimen/learn_namae_width"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/textsize_small" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="チュン："
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/textsize_medium" />
+                        </LinearLayout>
+
+                        <!-- Kaiwa content-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/textsize_small" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="初めまして。"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/textsize_medium" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="（　多言語訳を表示　）"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/textsize_medium" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/textsize_small" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="わたしは、ベトナムのチュンです。"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/textsize_medium" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="（　多言語訳を表示　）"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/textsize_medium" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/textsize_small" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="こちらこそよろしくお願いします。"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/textsize_medium" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="（　多言語訳を表示　）"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/textsize_medium" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+            <!-- Next step -->
+            <LinearLayout
+                android:id="@+id/learn_layout_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/learn_btn_back1"
+                    android:layout_width="@dimen/learn_step_width"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_step"
+                    android:padding="@dimen/spacing_normal"
+                    android:text="BACK\nStep1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_normal"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/learn_btn_back2"
+                    android:layout_width="@dimen/learn_step_width"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_step"
+                    android:padding="@dimen/spacing_normal"
+                    android:text="BACK\nStep2"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_normal"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/learn_btn_next2"
+                    android:layout_width="@dimen/learn_step_width"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_step"
+                    android:padding="@dimen/spacing_normal"
+                    android:text="NEXT\nStep2"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_normal" />
+
+                <Button
+                    android:id="@+id/learn_btn_next3"
+                    android:layout_width="@dimen/learn_step_width"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_medium"
+                    android:background="@drawable/button_step"
+                    android:padding="@dimen/spacing_normal"
+                    android:text="NEXT\nStep3"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_normal"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/footer"
+        layout="@layout/layout_footer" />
+</RelativeLayout>

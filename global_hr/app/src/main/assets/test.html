@@ -1,0 +1,22 @@
+<html>
+<head>
+    <script type="text/javascript">
+
+function speakerAnswers(a) {
+    try {
+    alert('d');
+        // Android
+        Android.getSpeakerAnswer(a);
+    } catch (e) {
+        // ios
+        getSpeakerAnswer("I love you");
+    }
+
+}
+    </script>
+</head>
+<body>
+<img onclick="speakerAnswers('SpeakerAnswer_1_6')" src="http://113.161.87.206:20980/GlobalHRService/resources/images/speaker.gif"
+     width="12" height="12" />
+</body>
+</html>

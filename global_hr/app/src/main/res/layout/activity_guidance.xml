@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".TopActivity">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/layout_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/header"
+        android:background="@drawable/layout_border_top"
+        android:orientation="vertical">
+        <!-- Action -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_large"
+                android:layout_marginTop="@dimen/spacing_medium"
+                android:text="Japan Life – 日本の生活 (にほんのせいかつ)"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_medium" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/learn_action_height"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/spacing_normal"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/icon_lesson" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/spacing_medium"
+                            android:layout_marginRight="@dimen/spacing_medium"
+                            android:background="@drawable/layout_border"
+                            android:gravity="center"
+                            android:hint="検索"
+                            android:textColorHint="@color/black"
+                            android:textSize="@dimen/textsize_large" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Content -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/spacing_medium"
+            android:background="@drawable/layout_border"
+            android:orientation="horizontal"
+            android:padding="@dimen/spacing_medium">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/learn_practice_btn_sound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_sound_off" />
+            </LinearLayout>
+            <!-- Title -->
+            <TextView
+                android:id="@+id/learn_practice_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_medium"
+                android:visibility="gone" />
+
+            <!-- Kaiwa -->
+            <!-- Kaiwa content-->
+            <ExpandableListView
+                android:id="@+id/guidance_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/learn_practice_layout_next"
+                android:layout_below="@+id/learn_practice_tv_title"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:groupIndicator="@drawable/ic_expand"
+                android:paddingBottom="@dimen/spacing_large" />
+            <!-- Next step -->
+            <LinearLayout
+                android:id="@+id/learn_practice_layout_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/learn_practice_btn_back"
+                    android:layout_width="@dimen/learn_step_width"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_step"
+                    android:padding="@dimen/spacing_normal"
+                    android:text="BACK\nExample"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_normal"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/learn_practice_btn_next"
+                    android:layout_width="@dimen/learn_step_width"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_step"
+                    android:padding="@dimen/spacing_normal"
+                    android:text="NEXT\nExample"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_normal" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/footer"
+        layout="@layout/layout_footer" />
+</RelativeLayout>

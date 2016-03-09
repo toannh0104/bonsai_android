@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LoginActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/HeaderBaseLayout">
+
+        <RelativeLayout style="@style/HeaderRelativeLayout">
+
+            <TextView
+                style="@style/HeaderTitleText"
+                android:text="@string/title_login" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_padding_btn"
+            android:layout_marginLeft="@dimen/spacing_medium"
+            android:layout_marginRight="@dimen/spacing_medium"
+            android:layout_marginTop="@dimen/spacing_medium"
+            android:gravity="center_horizontal"
+            android:text="@string/login_header"
+            android:textColor="@color/brown"
+            android:textSize="@dimen/textsize_huge" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_medium"
+            android:layout_marginLeft="@dimen/spacing_medium"
+            android:layout_marginRight="@dimen/spacing_medium"
+            android:layout_marginTop="0dp"
+            android:gravity="center_horizontal"
+            android:text="@string/login_mess"
+            android:textColor="@color/brown"
+            android:textSize="@dimen/textsize_medium" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="@dimen/spacing_medium"
+            android:layout_marginRight="@dimen/spacing_medium"
+            android:layout_marginTop="0dp"
+            android:gravity="left"
+            android:text="@string/login_id"
+            android:textColor="@color/brown"
+            android:textSize="@dimen/textsize_medium" />
+
+        <EditText
+            android:id="@+id/edt_login_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_medium"
+            android:layout_marginLeft="@dimen/spacing_medium"
+            android:layout_marginRight="@dimen/spacing_medium"
+            android:layout_marginTop="@dimen/spacing_padding_btn"
+            android:background="@drawable/edittext_bg_normal"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890-_"
+            android:gravity="left"
+            android:hint="@string/login_id"
+            android:imeOptions="actionNext"
+            android:nextFocusDown="@+id/edt_login_pass"
+            android:singleLine="true"
+            android:textColor="@color/brown"
+            android:textSize="@dimen/textsize_medium" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="@dimen/spacing_medium"
+            android:layout_marginRight="@dimen/spacing_medium"
+            android:layout_marginTop="0dp"
+            android:gravity="left"
+            android:text="@string/login_pass"
+            android:textColor="@color/brown"
+            android:textSize="@dimen/textsize_medium" />
+
+        <EditText
+            android:id="@+id/edt_login_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_padding_btn"
+            android:layout_marginLeft="@dimen/spacing_medium"
+            android:layout_marginRight="@dimen/spacing_medium"
+            android:layout_marginTop="@dimen/spacing_padding_btn"
+            android:background="@drawable/edittext_bg_normal"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+            android:gravity="left"
+            android:hint="@string/login_pass"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="@color/brown"
+            android:textSize="@dimen/textsize_medium" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_medium" />
+
+        <Button
+            android:id="@+id/btn_login"
+            style="@style/ButtonNormalBrown"
+            android:layout_gravity="center"
+            android:text="@string/title_login" />
+    </LinearLayout>
+
+</RelativeLayout>

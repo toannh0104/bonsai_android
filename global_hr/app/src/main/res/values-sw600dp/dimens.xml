@@ -1,0 +1,38 @@
+<resources>
+    <!-- 600/320 = 1.875-->
+
+    <dimen name="height_header">105dp</dimen>
+    <dimen name="height_footer">105dp</dimen>
+    <dimen name="height_top_search">105dp</dimen>
+    <dimen name="header_button_height">90dp</dimen>
+    <!-- Text size define. -->
+    <dimen name="textsize_huge">75sp</dimen>
+    <dimen name="textsize_large">56sp</dimen>
+    <dimen name="textsize_medium">37sp</dimen>
+    <dimen name="textsize_normal">22sp</dimen>
+    <dimen name="textsize_small">11sp</dimen>
+    <dimen name="textsize_supersmall">5sp</dimen>
+    <!-- Padding and spacing define. -->
+    <dimen name="spacing_super_small">2dp</dimen>
+    <dimen name="spacing_small">4dp</dimen>
+    <dimen name="spacing_normal">7dp</dimen>
+    <dimen name="spacing_padding_btn">9dp</dimen>
+    <dimen name="spacing_medium">19dp</dimen>
+    <dimen name="spacing_large">28dp</dimen>
+    <dimen name="spacing_huge">37dp</dimen>
+    <dimen name="line_height">2dp</dimen>
+
+    <!--loading -->
+    <dimen name="loading_width">244dp</dimen>
+    <dimen name="dialog_info_width">469dp</dimen>
+    <dimen name="dialog_info_height">169dp</dimen>
+    <dimen name="dialog_info_btn_height">84dp</dimen>
+    <!-- Learn Base -->
+    <dimen name="learn_action_height">120dp</dimen>
+    <dimen name="learn_step_width">180dp</dimen>
+    <dimen name="learn_namae_width">150dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">30dp</dimen>
+    <dimen name="activity_vertical_margin">30dp</dimen>
+</resources>
